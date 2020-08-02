@@ -1,0 +1,52 @@
+{
+  "name": "html-ready",
+  "version": "0.0.0",
+  "description": "The promise to ensure window/document is ready",
+  "repository": "1000ch/html-ready",
+  "keywords": [
+    "window",
+    "document",
+    "load"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "author": {
+    "name": "Shogo Sensui",
+    "email": "shogosensui@gmail.com",
+    "url": "https://github.com/1000ch"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1000ch/html-ready/issues"
+  },
+  "homepage": "https://github.com/1000ch/html-ready",
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^7.21.7",
+    "@types/jest": "^26.0.4",
+    "jest": "^26.1.0",
+    "ts-jest": "^26.1.2",
+    "typescript": "^3.9.6"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "ts"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/test/*.test.ts"
+    ]
+  }
+}
