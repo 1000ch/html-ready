@@ -15,24 +15,24 @@ $ npm install html-ready
 ```javascript
 import { documentReady, windowReady } from 'https://unpkg.com/html-ready';
 
-documentReady().then(() => {
+documentReady.then(() => {
   console.log('document DOMContentLoaded event is fired');
 });
 
-windowReady().then(() => {
+windowReady.then(() => {
   console.log('window load event is fired');
 });
 ```
 
 ## API
 
-### documentReady(): Promise<[Event](https://developer.mozilla.org/en-US/docs/Web/API/Event) | undefined>
+### documentReady: Promise<[Event](https://developer.mozilla.org/en-US/docs/Web/API/Event) | undefined>
 
-`documentReady()` returns `Promise` that is resolved if the HTML document has been loaded and parsed. If the hole page has not loaded, the timing is equivalent to [the `DOMContentLoaded` event of document](https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event).
+`documentReady` is a `Promise` that is resolved if the HTML document has been loaded and parsed. If the hole page has not loaded, the timing is equivalent to [the `DOMContentLoaded` event of document](https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event).
 
-### windowReady(): Promise<[Event](https://developer.mozilla.org/en-US/docs/Web/API/Event) | undefined>
+### windowReady: Promise<[Event](https://developer.mozilla.org/en-US/docs/Web/API/Event) | undefined>
 
-`windowReady()` returns `Promise` that is resolved if the hole page has been loaded. If the hole page has not been loaded, the timing is equivalent to [the `load` event of window](https://developer.mozilla.org/docs/Web/API/Window/load_event).
+`windowReady` is a `Promise` that is resolved if the hole page has been loaded. If the hole page has not been loaded, the timing is equivalent to [the `load` event of window](https://developer.mozilla.org/docs/Web/API/Window/load_event).
 
 ## License
 

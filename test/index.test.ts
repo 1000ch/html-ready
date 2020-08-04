@@ -7,13 +7,13 @@ describe('documentReady', () => {
   });
 
   test('should not resolve after document DOMContentLoaded is fired', () => {
-    expect(documentReady()).resolves.not.toBeCalled();
-    expect(documentReady()).rejects.toBeCalled();
+    expect(documentReady).resolves.not.toBeCalled();
+    expect(documentReady).rejects.toBeCalled();
   });
 
   test('should resolve after document DOMContentLoaded is fired', () => {
-    expect(documentReady()).resolves.toBeCalled();
-    expect(documentReady()).rejects.not.toBeCalled();
+    expect(documentReady).resolves.toBeCalled();
+    expect(documentReady).rejects.not.toBeCalled();
 
     fireEvent(document, new Event('DOMContentLoaded', {
       bubbles: true,
@@ -29,13 +29,13 @@ describe('windowReady', () => {
   });
 
   test('should not resolve after document load is fired', () => {
-    expect(windowReady()).resolves.not.toBeCalled();
-    expect(windowReady()).rejects.toBeCalled();
+    expect(windowReady).resolves.not.toBeCalled();
+    expect(windowReady).rejects.toBeCalled();
   });
 
   test('should resolve after document load is fired', () => {
-    expect(windowReady()).resolves.toBeCalled();
-    expect(windowReady()).rejects.not.toBeCalled();
+    expect(windowReady).resolves.toBeCalled();
+    expect(windowReady).rejects.not.toBeCalled();
 
     fireEvent(window, new Event('load', {
       bubbles: true,
