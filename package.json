@@ -1,6 +1,6 @@
 {
   "name": "html-ready",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "The promise to ensure window/document is ready",
   "repository": "1000ch/html-ready",
   "keywords": [
