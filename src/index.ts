@@ -1,4 +1,4 @@
-const listenerOptions = {
+const listenerOptions: AddEventListenerOptions = {
   capture: true,
   once: true,
   passive: true
@@ -6,7 +6,7 @@ const listenerOptions = {
 
 export const documentReady: Promise<Event | undefined> = new Promise((resolve) => {
   if (document.readyState === 'interactive' || document.readyState === 'complete') {
-    resolve();
+    resolve(undefined);
   } else {
     document.addEventListener('DOMContentLoaded', event => resolve(event), listenerOptions);
   }
@@ -14,7 +14,7 @@ export const documentReady: Promise<Event | undefined> = new Promise((resolve) =
 
 export const windowReady: Promise<Event | undefined> = new Promise((resolve) => {
   if (document.readyState === 'complete') {
-    resolve();
+    resolve(undefined);
   } else {
     window.addEventListener('load', event => resolve(event), listenerOptions);
   }
