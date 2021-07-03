@@ -30,7 +30,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@testing-library/dom": "^7.30.3",
+    "@testing-library/dom": "^8.1.0",
     "@types/jest": "^26.0.22",
     "jest": "^27.0.4",
     "microbundle": "^0.13.0",
