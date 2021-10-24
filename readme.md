@@ -1,4 +1,4 @@
-# html-ready ![test](https://github.com/1000ch/html-ready/workflows/test/badge.svg?branch=master) [![devDependency Status](https://david-dm.org/1000ch/html-ready/dev-status.svg)](https://david-dm.org/1000ch/html-ready?type=dev)
+# html-ready ![test](https://github.com/1000ch/html-ready/workflows/test/badge.svg?branch=main)
 
 The promise to ensure window/document is ready.
 
